@@ -12,8 +12,8 @@ namespace XXXXXX
 
         public PageUneViewModel()
         {
-            FirstColor = Color.GreenYellow;
-            SecondColor = Color.Red;
+            FirstColor = Color.CornflowerBlue;
+            SecondColor = Color.WhiteSmoke;
         }
 
         public Color FirstColor
@@ -41,15 +41,15 @@ namespace XXXXXX
 
         public void UpdateColors()
         {
-            if (FirstColor == Color.GreenYellow)
+            if (FirstColor == Color.CornflowerBlue)
             {
-                FirstColor = Color.Red;
-                SecondColor = Color.GreenYellow;
+                FirstColor = Color.WhiteSmoke;
+                SecondColor = Color.CornflowerBlue;
             }
             else
             {
-                SecondColor = Color.Red;
-                FirstColor = Color.GreenYellow;
+                SecondColor = Color.WhiteSmoke;
+                FirstColor = Color.CornflowerBlue;
             }
         }
     }

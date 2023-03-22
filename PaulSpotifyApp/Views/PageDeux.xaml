@@ -5,7 +5,7 @@
              x:Class="PaulSpotifyApp.Views.PageDeux">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Page 2"
+            <Label Text="Page 2" x:Name="NomArtiste"
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
         </StackLayout>
