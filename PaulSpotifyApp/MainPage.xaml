@@ -4,20 +4,16 @@
        xmlns:views="clr-namespace:PaulSpotifyApp.Views;assembly=PaulSpotifyApp"
        x:Class="PaulSpotifyApp.MainPage">
     <TabBar>
-        <Tab Title="1"
-             Icon="un.png">
+        <Tab Title="1">
             <ShellContent ContentTemplate="{DataTemplate views:PageUne}" />
         </Tab>
-        <Tab Title="2"
-             Icon="deux.png">
+        <Tab Title="2">
             <ShellContent ContentTemplate="{DataTemplate views:PageDeux}" />
         </Tab>
-        <Tab Title="3"
-             Icon="trois.png">
+        <Tab Title="3">
             <ShellContent ContentTemplate="{DataTemplate views:PageTrois}" />
         </Tab>
-        <Tab Title="4"
-             Icon="quatre.png">
+        <Tab Title="4">
             <ShellContent ContentTemplate="{DataTemplate views:PageQuatre}" />
         </Tab>
     </TabBar>

@@ -7,7 +7,45 @@
         <StackLayout>
             <Label Text="Bienvenue sur ma première application Xamarin"
                    VerticalOptions="StartAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+                   HorizontalOptions="CenterAndExpand" FontSize="Title" 
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Dans cette application, nous allons afficher diverses informations liées à l'API Spotify" 
+                   FontSize="Subtitle" VerticalOptions="StartAndExpand" HorizontalTextAlignment="Center"/>
+            <FlexLayout Direction="Row" VerticalOptions="StartAndExpand">
+                <Image Source="imagePageUne.png"></Image>
+                <Image Source="image2PageUne.png"></Image>
+            </FlexLayout>
+            <Button Text="Cliquez-moi !" Clicked="Button_OnClicked"></Button>
+            <StackLayout HeightRequest="300">
+                <FlexLayout Direction="Row">
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
+                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                </FlexLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
