@@ -69,6 +69,10 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icone1.png" />
+    <AndroidResource Include="Resources\drawable\icone2.png" />
+    <AndroidResource Include="Resources\drawable\icone3.png" />
+    <AndroidResource Include="Resources\drawable\icone4.png" />
     <AndroidResource Include="Resources\drawable\imagePageUne.png" />
     <AndroidResource Include="Resources\drawable\image2PageUne.jpg" />
     <AndroidResource Include="Resources\values\styles.xml" />
