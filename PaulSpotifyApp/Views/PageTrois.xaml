@@ -5,10 +5,29 @@
              x:Class="PaulSpotifyApp.Views.PageTrois">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Page 3"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand"
-                   TextColor="Black"/>
+            <Image x:Name="ImageDeLAlbum"
+                   Margin="0, 50, 0, 0" />
+
+            <Label Text="Page 2" x:Name="NomAlbum"
+                   TextColor="Black"
+                   FontSize="45"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="Artiste"
+                   TextColor="Black"
+                   FontSize="25"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="DateDeSortie"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" Margin="20">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding}" TextColor="Black" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
