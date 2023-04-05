@@ -2,7 +2,9 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:PaulSpotifyApp.Views;assembly=PaulSpotifyApp"
-       x:Class="PaulSpotifyApp.MainPage">
+       x:Class="PaulSpotifyApp.MainPage"
+       TitleColor="CornflowerBlue"
+       UnselectedColor="gray">
     <TabBar>
         <Tab Title="1" Icon="icone1.png">
             <ShellContent ContentTemplate="{DataTemplate views:PageUne}" />

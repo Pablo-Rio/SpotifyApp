@@ -4,11 +4,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PaulSpotifyApp.Views.PageDeux">
     <ContentPage.Content>
-        <StackLayout>
+           <FlexLayout JustifyContent="Center"
+                       Direction="Column">
+            <Image x:Name="ImageDeLArtiste"
+                   Margin="0, 50, 0, 0"/>
             
             <Label Text="Page 2" x:Name="NomArtiste"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                   TextColor="Black"
+                   FontSize="45"
+                   HorizontalTextAlignment="Center"/>
+            <Label x:Name="NombreFollowers"
+                   TextColor="Black"
+                   FontSize="25"
+                   HorizontalTextAlignment="Center"/>
+            <Label x:Name="GenresMusicaux"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"/>
+            <Label x:Name="Popularite"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"/>
+        </FlexLayout>
     </ContentPage.Content>
 </ContentPage>

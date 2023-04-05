@@ -8,9 +8,11 @@
             <Label Text="Bienvenue sur ma première application Xamarin"
                    VerticalOptions="StartAndExpand"
                    HorizontalOptions="CenterAndExpand" FontSize="Title" 
-                   HorizontalTextAlignment="Center"/>
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"/>
             <Label Text="Dans cette application, nous allons afficher diverses informations liées à l'API Spotify" 
-                   FontSize="Subtitle" VerticalOptions="StartAndExpand" HorizontalTextAlignment="Center"/>
+                   FontSize="Subtitle" VerticalOptions="StartAndExpand" HorizontalTextAlignment="Center"
+                   TextColor="Black"/>
             <FlexLayout Direction="Row" VerticalOptions="StartAndExpand">
                 <Image Source="imagePageUne.png"></Image>
                 <Image Source="image2PageUne.png"></Image>

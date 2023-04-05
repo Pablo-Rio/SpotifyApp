@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EliseSpotifyApp.Service;
+using PaulSpotifyApp.Service;
 using Xamarin.Forms;
 
 namespace PaulSpotifyApp
