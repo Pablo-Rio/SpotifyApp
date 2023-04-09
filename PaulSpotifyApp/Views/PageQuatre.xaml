@@ -5,10 +5,28 @@
              x:Class="PaulSpotifyApp.Views.PageQuatre">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Page 4"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand"
-                   TextColor="Black"/>
+            <Label x:Name="NomTitre"
+                   TextColor="Black"
+                   FontSize="45"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="NomArtiste"
+                     TextColor="Black"
+                     FontSize="25"
+                     HorizontalTextAlignment="Center" />
+            <Label x:Name="NomAlbum"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center" />
+            <Image x:Name="ImageDeLAlbum"
+                   Margin="0, 50, 0, 0" />
+            <Label x:Name="NumeroDeLaPiste"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="Duree"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="DureeTotale"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
