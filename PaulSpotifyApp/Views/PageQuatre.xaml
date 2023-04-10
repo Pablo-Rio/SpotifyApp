@@ -5,6 +5,32 @@
              x:Class="PaulSpotifyApp.Views.PageQuatre">
     <ContentPage.Content>
         <StackLayout>
+            <Label x:Name="NomPlaylist"
+                              TextColor="Black"
+                              FontSize="35"
+                              HorizontalTextAlignment="Center" />
+            <Label x:Name="Autheur"
+                   TextColor="Black"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="NbreDeTitres"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="DureeTotale"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+            <Label x:Name="Test"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" Margin="20">
+                   <ListView.ItemTemplate>
+                          <DataTemplate>
+                                 <ViewCell>
+                                        <Label Text="{Binding}" TextColor="Black" />
+                                 </ViewCell>
+                          </DataTemplate>
+                   </ListView.ItemTemplate>
+            </ListView>
             <Label x:Name="NomTitre"
                    TextColor="Black"
                    FontSize="45"
@@ -22,9 +48,6 @@
                    TextColor="Black"
                    HorizontalTextAlignment="Center" />
             <Label x:Name="Duree"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center" />
-            <Label x:Name="DureeTotale"
                    TextColor="Black"
                    HorizontalTextAlignment="Center" />
         </StackLayout>
