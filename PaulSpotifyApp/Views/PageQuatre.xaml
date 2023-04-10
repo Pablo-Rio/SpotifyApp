@@ -53,9 +53,8 @@
                 <Label x:Name="Duree"
                        TextColor="Black"
                        HorizontalTextAlignment="Center" />
-                   <Label x:Name="url"
-                          TextColor="Black"
-                          HorizontalTextAlignment="Center" />
-            </FlexLayout>
+                <Button x:Name="PlayPause" Text="Écouter"
+                        IsVisible="False" Clicked="OnPlayPauseClicked" />
+        </FlexLayout>
     </ContentPage.Content>
 </ContentPage>

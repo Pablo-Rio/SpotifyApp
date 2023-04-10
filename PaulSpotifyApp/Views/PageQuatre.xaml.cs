@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Plugin.SimpleAudioPlayer;
 using PaulSpotifyApp.Service;
+using Plugin.AudioRecorder;
 using SpotifyAPI.Web;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -14,9 +14,11 @@ namespace PaulSpotifyApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageQuatre : ContentPage
     {
-        
+        private readonly AudioPlayer _audioPlayer = new AudioPlayer();   
         private List<string> trackIds;
         private List<string> trackNames;
+        private String trackId;
+        private Boolean isPlaying = false;
         public PageQuatre()
         {
             InitializeComponent();
@@ -54,10 +56,10 @@ namespace PaulSpotifyApp.Views
         private void Cell_OnTapped(object sender, EventArgs e)
         {
             // Affiche un l'id de l'élément du tableau trackIds correspondant à l'élément du tableau trackNames
-            
+
             var cell = sender as ViewCell;
             var trackName = cell.View.BindingContext as string;
-            var trackId = trackIds[trackNames.IndexOf(trackName)];
+            trackId = trackIds[trackNames.IndexOf(trackName)];
 
             this.NomTitre.Text = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId)
                 .Result.Name;
@@ -75,13 +77,33 @@ namespace PaulSpotifyApp.Views
             var secondes = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result
                 .DurationMs / 1000 % 60;
             this.Duree.Text = "Durée : " + minutes + " min " + secondes + " s";
-            
-            var url = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result.PreviewUrl;
-            this.url.Text = url;
-            // Joue la piste
-            
 
-            
+            var url = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result.PreviewUrl;
+            this.PlayPause.IsVisible = false;
+            _audioPlayer.Pause();
+            if (url != null)
+            {
+                this.PlayPause.IsVisible = true;
+            }
+        }
+        private void OnPlayPauseClicked(object sender, EventArgs e)
+        {
+            var url = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result.PreviewUrl;
+            if (url != null)
+            {
+                if (isPlaying)
+                {
+                    _audioPlayer.Pause();
+                    this.PlayPause.Text = "Écouter";
+                    isPlaying = false;
+                }
+                else
+                {
+                    _audioPlayer.Play(url);
+                    this.PlayPause.Text = "Arrêter";
+                    isPlaying = true;
+                }
+            }
         }
     }
 }
