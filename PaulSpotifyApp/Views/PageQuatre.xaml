@@ -22,7 +22,7 @@
             <Label x:Name="Test"
                    TextColor="Black"
                    HorizontalTextAlignment="Center" />
-            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" RowHeight="30" HeightRequest="200">
+            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" RowHeight="30" HeightRequest="200" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Tapped="Cell_OnTapped">
@@ -53,6 +53,9 @@
                 <Label x:Name="Duree"
                        TextColor="Black"
                        HorizontalTextAlignment="Center" />
+                   <Label x:Name="url"
+                          TextColor="Black"
+                          HorizontalTextAlignment="Center" />
             </FlexLayout>
     </ContentPage.Content>
 </ContentPage>

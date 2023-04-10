@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Plugin.SimpleAudioPlayer;
 using PaulSpotifyApp.Service;
 using SpotifyAPI.Web;
 using Xamarin.Forms;
@@ -74,6 +75,13 @@ namespace PaulSpotifyApp.Views
             var secondes = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result
                 .DurationMs / 1000 % 60;
             this.Duree.Text = "Durée : " + minutes + " min " + secondes + " s";
+            
+            var url = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result.PreviewUrl;
+            this.url.Text = url;
+            // Joue la piste
+            
+
+            
         }
     }
 }
