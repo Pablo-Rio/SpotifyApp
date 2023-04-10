@@ -4,11 +4,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PaulSpotifyApp.Views.PageQuatre">
     <ContentPage.Content>
-        <StackLayout>
+        <FlexLayout Direction="Column" AlignItems="Center">
             <Label x:Name="NomPlaylist"
-                              TextColor="Black"
-                              FontSize="35"
-                              HorizontalTextAlignment="Center" />
+                   TextColor="Black"
+                   FontSize="35"
+                   HorizontalTextAlignment="Center" />
             <Label x:Name="Autheur"
                    TextColor="Black"
                    FontSize="20"
@@ -22,34 +22,37 @@
             <Label x:Name="Test"
                    TextColor="Black"
                    HorizontalTextAlignment="Center" />
-            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" Margin="20, 0, 20, 0">
-                   <ListView.ItemTemplate>
-                          <DataTemplate>
-                                 <ViewCell Tapped="Cell_OnTapped">
-                                        <Label Text="{Binding}" TextColor="Black"/>
-                                 </ViewCell>
-                          </DataTemplate>
-                   </ListView.ItemTemplate>
+            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" RowHeight="30" HeightRequest="200">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Tapped="Cell_OnTapped">
+                            <Label Text="{Binding}" TextColor="Black" Padding="30,0,0,0"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
-            <Label x:Name="NomTitre"
-                   TextColor="Black"
-                   FontSize="35"
-                   HorizontalTextAlignment="Center" />
-            <Label x:Name="NomArtiste"
-                     TextColor="Black"
-                     FontSize="20"
-                     HorizontalTextAlignment="Center" />
-            <Label x:Name="NomAlbum"
-                        TextColor="Black"
-                        HorizontalTextAlignment="Center" />
             <Image x:Name="ImageDeLAlbum"
-                   Margin="0, 50, 0, 0" />
-            <Label x:Name="NumeroDeLaPiste"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center" />
-            <Label x:Name="Duree"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center" />
-        </StackLayout>
+                   Margin="0"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   WidthRequest="200" />
+                <Label x:Name="NomTitre"
+                       TextColor="Black"
+                       FontSize="35"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="NomArtiste"
+                       TextColor="Black"
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="NomAlbum"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="NumeroDeLaPiste"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="Duree"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+            </FlexLayout>
     </ContentPage.Content>
 </ContentPage>

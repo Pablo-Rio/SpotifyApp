@@ -68,7 +68,7 @@ namespace PaulSpotifyApp.Views
                 .Result.Album.Images[0].Url;
             var albumId = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId)
                 .Result.Album.Id;
-            this.NumeroDeLaPiste.Text = "Piste : " + trackNames.IndexOf(trackName) + 1;
+            this.NumeroDeLaPiste.Text = "Piste : " + (trackNames.IndexOf(trackName) + 1);
             var minutes = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result
                 .DurationMs / 1000 / 60;
             var secondes = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result
