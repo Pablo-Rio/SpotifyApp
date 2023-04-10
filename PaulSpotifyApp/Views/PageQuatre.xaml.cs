@@ -13,6 +13,9 @@ namespace PaulSpotifyApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageQuatre : ContentPage
     {
+        
+        private List<string> trackIds;
+        private List<string> trackNames;
         public PageQuatre()
         {
             InitializeComponent();
@@ -24,9 +27,37 @@ namespace PaulSpotifyApp.Views
                 .Result.Owner.DisplayName;
             this.NbreDeTitres.Text = SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId)
                 .Result.Tracks.Total + " titres";
+
+            int dureeTotale = 0;
+
+            // Liste des titres de la playlist
+            var playlist = SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId).Result;
+            var tracks = playlist.Tracks.Items;
+            trackIds = new List<string>();
+            trackNames = new List<string>();
+            foreach (var track in tracks)
+            {
+                var fullTrack = track.Track as FullTrack;
+                trackNames.Add(fullTrack.Name);
+                trackIds.Add(fullTrack.Id);
+                dureeTotale += fullTrack.DurationMs;
+            }
+            this.ListeDesTitres.ItemsSource = trackNames;
             
+            // Durée totale de la playlist
+            var minutesTotales = dureeTotale / 1000 / 60;
+            var secondesTotales = dureeTotale / 1000 % 60;
+            this.DureeTotale.Text = "Durée totale de la playlist : " + minutesTotales + " min " + secondesTotales + " s";
+        }
+
+        private void Cell_OnTapped(object sender, EventArgs e)
+        {
+            // Affiche un l'id de l'élément du tableau trackIds correspondant à l'élément du tableau trackNames
             
-            var trackId = "0pqnGHJpmpxLKifKRmU6WP";
+            var cell = sender as ViewCell;
+            var trackName = cell.View.BindingContext as string;
+            var trackId = trackIds[trackNames.IndexOf(trackName)];
+
             this.NomTitre.Text = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId)
                 .Result.Name;
             this.NomArtiste.Text = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId)
@@ -37,37 +68,12 @@ namespace PaulSpotifyApp.Views
                 .Result.Album.Images[0].Url;
             var albumId = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId)
                 .Result.Album.Id;
-            this.NumeroDeLaPiste.Text = "Piste : " + SpotifyService.Instance.GetSpotifyClient().Tracks
-                .Get(trackId).Result.TrackNumber;
+            this.NumeroDeLaPiste.Text = "Piste : " + trackNames.IndexOf(trackName) + 1;
             var minutes = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result
                 .DurationMs / 1000 / 60;
             var secondes = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result
                 .DurationMs / 1000 % 60;
             this.Duree.Text = "Durée : " + minutes + " min " + secondes + " s";
-            
-            // Durée totale de la playlist
-            var longueurTotale = SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId).Result.Tracks.Total;
-            int dureeTotale = 0;
-            for (int i = 0; i < longueurTotale; i++)
-            {
-                //dureeTotale += SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId).Result.Tracks.Items[i].Track.GetHashCode();
-            }
-            var minutesTotales = dureeTotale / 1000 / 60;
-            var secondesTotales = dureeTotale / 1000 % 60;
-            this.DureeTotale.Text = "Durée totale de la playlist : " + minutesTotales + " min " + secondesTotales + " s";
-            
-            // Liste des titres de la playlist
-            var playlist = SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId).Result;
-            var tracks = playlist.Tracks.Items;
-            List<string> trackIds = new List<string>();
-            List<string> trackNames = new List<string>();
-            foreach (var track in tracks)
-            {
-                var fullTrack = track.Track as FullTrack;
-                trackNames.Add(fullTrack.Name);
-                trackIds.Add(fullTrack.Id);
-            }
-            this.ListeDesTitres.ItemsSource = trackNames;
         }
     }
 }

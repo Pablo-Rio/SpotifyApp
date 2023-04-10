@@ -22,22 +22,22 @@
             <Label x:Name="Test"
                    TextColor="Black"
                    HorizontalTextAlignment="Center" />
-            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" Margin="20">
+            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" Margin="20, 0, 20, 0">
                    <ListView.ItemTemplate>
                           <DataTemplate>
-                                 <ViewCell>
-                                        <Label Text="{Binding}" TextColor="Black" />
+                                 <ViewCell Tapped="Cell_OnTapped">
+                                        <Label Text="{Binding}" TextColor="Black"/>
                                  </ViewCell>
                           </DataTemplate>
                    </ListView.ItemTemplate>
             </ListView>
             <Label x:Name="NomTitre"
                    TextColor="Black"
-                   FontSize="45"
+                   FontSize="35"
                    HorizontalTextAlignment="Center" />
             <Label x:Name="NomArtiste"
                      TextColor="Black"
-                     FontSize="25"
+                     FontSize="20"
                      HorizontalTextAlignment="Center" />
             <Label x:Name="NomAlbum"
                         TextColor="Black"
