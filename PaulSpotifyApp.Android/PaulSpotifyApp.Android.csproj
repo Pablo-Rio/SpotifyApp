@@ -72,12 +72,15 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EnveloppeF.png" />
+    <AndroidResource Include="Resources\drawable\EnveloppeO.png" />
     <AndroidResource Include="Resources\drawable\icone1.png" />
     <AndroidResource Include="Resources\drawable\icone2.png" />
     <AndroidResource Include="Resources\drawable\icone3.png" />
     <AndroidResource Include="Resources\drawable\icone4.png" />
     <AndroidResource Include="Resources\drawable\imagePageUne.png" />
     <AndroidResource Include="Resources\drawable\image2PageUne.jpg" />
+    <AndroidResource Include="Resources\drawable\Lettre.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\icon.png">
       <SubType>Designer</SubType>
     </AndroidResource>
