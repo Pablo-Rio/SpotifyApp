@@ -4,25 +4,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PaulSpotifyApp.Views.PageDeux">
     <ContentPage.Content>
-           <FlexLayout JustifyContent="Center"
-                       Direction="Column">
-            <Image x:Name="ImageDeLArtiste"
-                   Margin="0, 50, 0, 0"/>
-            
+        <StackLayout>
+            <Frame HeightRequest="400" Padding="0">
+                <Image x:Name="ImageDeLArtiste" Aspect="AspectFill" />
+            </Frame>
             <Label Text="Page 2" x:Name="NomArtiste"
-                   TextColor="Black"
-                   FontSize="45"
-                   HorizontalTextAlignment="Center"/>
-            <Label x:Name="NombreFollowers"
-                   TextColor="Black"
-                   FontSize="25"
-                   HorizontalTextAlignment="Center"/>
-            <Label x:Name="GenresMusicaux"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center"/>
-            <Label x:Name="Popularite"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center"/>
-        </FlexLayout>
+                   TextColor="White"
+                   FontSize="70"
+                   HorizontalTextAlignment="Start"
+                   Margin="20,-120,0,0"
+                   FontAttributes="Bold" />
+            <FlexLayout Direction="Column"
+                        AlignItems="Start"
+                        Padding="30, 30, 30, 0">
+                <Label x:Name="NombreFollowers"
+                       TextColor="White"
+                       FontSize="25"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold" />
+                <Label x:Name="GenresMusicaux"
+                       TextColor="#A7A7A7"
+                       FontSize="20"
+                       HorizontalTextAlignment="Start" />
+                <Label x:Name="Popularite"
+                       TextColor="#A7A7A7"
+                       FontSize="20"
+                       HorizontalTextAlignment="Start" />
+            </FlexLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

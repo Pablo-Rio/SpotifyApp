@@ -15,7 +15,6 @@ namespace PaulSpotifyApp
         {
             InitializeComponent();
             SpotifyService.Instance.ConnectSpotify();
-            
         }
     }
 }

@@ -22,15 +22,23 @@ namespace PaulSpotifyApp.Views
             this.ImageDeLAlbum.Source =
                 SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.Images[0].Url;
             this.Artiste.Text = SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.Artists[0].Name;
-            this.DateDeSortie.Text = SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.ReleaseDate;
-            
+            var date = SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.ReleaseDate;
+            // Met la date au format français
+            this.DateDeSortie.Text = date.Substring(8, 2) + "/" + date.Substring(5, 2) + "/" + date.Substring(0, 4);
+
             var longueur = SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.Tracks.Items.Count;
-            string[] tableau = new string[longueur];
+            List<Musique> musiques = new List<Musique>();
             for (int i = 0; i < longueur; i++)
             {
-                tableau[i] = SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.Tracks.Items[i].Name;
+                var musique = SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.Tracks.Items[i]
+                    .Name;
+                var dureeMs = SpotifyService.Instance.GetSpotifyClient().Albums.Get(albumId).Result.Tracks.Items[i]
+                    .DurationMs;
+                var duree = TimeSpan.FromMilliseconds(dureeMs).ToString(@"m\:ss");
+                musiques.Add(new Musique { NomDeLaMusique = musique, Duree = duree });
             }
-            this.ListeDesTitres.ItemsSource = tableau;
+
+            ListeDesTitres.ItemsSource = musiques;
         }
     }
 }

@@ -1,10 +1,12 @@
 ﻿using System;
-
+using System.Linq;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Android.Widget;
+using PaulSpotifyApp.Views;
+using Xamarin.Forms;
 
 namespace PaulSpotifyApp.Droid
 {
@@ -20,6 +22,12 @@ namespace PaulSpotifyApp.Droid
             LoadApplication(new App());
             Window.SetStatusBarColor(Android.Graphics.Color.White);
             Window.SetNavigationBarColor(Android.Graphics.Color.White);
+            
+            MessagingCenter.Subscribe<PageDeux, Color>(this, "StatusBarColor", (sender, color) =>
+            {
+                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor(color.ToHex()));
+            });
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

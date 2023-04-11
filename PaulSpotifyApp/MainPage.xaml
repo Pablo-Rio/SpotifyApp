@@ -4,7 +4,8 @@
        xmlns:views="clr-namespace:PaulSpotifyApp.Views;assembly=PaulSpotifyApp"
        x:Class="PaulSpotifyApp.MainPage"
        TitleColor="#1DB954"
-       UnselectedColor="gray">
+       UnselectedColor="gray"
+       NavBarIsVisible="False">
     <TabBar>
         <Tab Title="1" Icon="icone1.png">
             <ShellContent ContentTemplate="{DataTemplate views:PageUne}" />
