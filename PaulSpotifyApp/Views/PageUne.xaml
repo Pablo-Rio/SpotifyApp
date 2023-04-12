@@ -26,34 +26,781 @@
             </Image>
             <Image x:Name="enveloppeO" Source="EnveloppeO.png" IsVisible="False" WidthRequest="240"/>
             <Image x:Name="lettre" Source="Lettre.png" IsVisible="False" Margin="0,-55,0,0"/>
-            <StackLayout HeightRequest="290" Padding="50, 0,50,0" Margin="0,-290,0,0" IsVisible="False" x:Name="tableau">
-                <FlexLayout Direction="Row" Margin="0,-9,0,0">
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
+            <StackLayout HeightRequest="300" Padding="50, 0,50,0" Margin="0,-290,0,0" IsVisible="False" x:Name="tableau">
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS}"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS}"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
                 </FlexLayout>
-                <FlexLayout Direction="Row" Margin="0,-9,0,0">
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                 <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                     <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                     <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                     <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                     <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
                 </FlexLayout>
-                <FlexLayout Direction="Row" Margin="0,-9,0,0">
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
                 </FlexLayout>
-                <FlexLayout Direction="Row" Margin="0,-9,0,0">
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
-                    <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="10.5">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                </FlexLayout>
+                <FlexLayout Direction="Row" Margin="0,-9,0,0" HeightRequest="8">
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding FirstColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding WhiteS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="3.2%" BackgroundColor="{Binding BlackS }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
+                    <BoxView FlexLayout.Basis="10%" BackgroundColor="{Binding SecondColor }"></BoxView>
                 </FlexLayout>
                 <Button Text="Déchiffrer" Clicked="Button_OnClicked" 
                         FontFamily="Resources/Fonts/Rage.ttf#Rage" 
@@ -61,7 +808,7 @@
                         Padding="0"
                         FontSize="30"
                         TextColor="Black"
-                        BackgroundColor="#F9D1A3"/>
+                        BackgroundColor="White"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

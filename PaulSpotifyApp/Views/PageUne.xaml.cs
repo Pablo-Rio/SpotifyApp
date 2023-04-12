@@ -18,8 +18,7 @@ namespace PaulSpotifyApp.Views
             InitializeComponent();
             BindingContext = PageUneViewModel.Instance;
         }
-
-
+        
         private void Button_OnClicked(object sender, EventArgs e)
         {
             PageUneViewModel.Instance.UpdateColors();
