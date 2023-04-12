@@ -7,6 +7,7 @@ using Android.OS;
 using Android.Widget;
 using PaulSpotifyApp.Views;
 using Xamarin.Forms;
+using Button = Xamarin.Forms.Button;
 
 namespace PaulSpotifyApp.Droid
 {
@@ -27,7 +28,6 @@ namespace PaulSpotifyApp.Droid
             {
                 Window.SetStatusBarColor(Android.Graphics.Color.ParseColor(color.ToHex()));
             });
-
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PaulSpotifyApp.Views.PageUne">
@@ -25,7 +24,7 @@
                     <TapGestureRecognizer Tapped="OnImageTapped" />
                 </Image.GestureRecognizers>
             </Image>
-            <Image x:Name="enveloppeO" Source="EnveloppeO.png" IsVisible="False" WidthRequest="260"/>
+            <Image x:Name="enveloppeO" Source="EnveloppeO.png" IsVisible="False" WidthRequest="240"/>
             <Image x:Name="lettre" Source="Lettre.png" IsVisible="False" Margin="0,-55,0,0"/>
             <StackLayout HeightRequest="290" Padding="50, 0,50,0" Margin="0,-290,0,0" IsVisible="False" x:Name="tableau">
                 <FlexLayout Direction="Row" Margin="0,-9,0,0">
@@ -56,7 +55,13 @@
                     <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"></BoxView>
                     <BoxView FlexLayout.Basis="20%" BackgroundColor="Black"></BoxView>
                 </FlexLayout>
-                <Button Text="Déchiffrer" Clicked="Button_OnClicked" Style="@style/ButtonStyle" />
+                <Button Text="Déchiffrer" Clicked="Button_OnClicked" 
+                        FontFamily="Resources/Fonts/Rage.ttf#Rage" 
+                        TextTransform="None"
+                        Padding="0"
+                        FontSize="30"
+                        TextColor="Black"
+                        BackgroundColor="#F9D1A3"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
