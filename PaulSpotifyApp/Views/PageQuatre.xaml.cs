@@ -23,7 +23,7 @@ namespace PaulSpotifyApp.Views
         {
             InitializeComponent();
             var playlistId = "69d0rVifC3AuhnZOQDMXLC";
-            
+
             this.NomPlaylist.Text = SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId)
                 .Result.Name;
             this.Autheur.Text = "par " + SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId)
@@ -80,6 +80,7 @@ namespace PaulSpotifyApp.Views
 
             var url = SpotifyService.Instance.GetSpotifyClient().Tracks.Get(trackId).Result.PreviewUrl;
             this.PlayPause.IsVisible = false;
+
             _audioPlayer.Pause();
             if (url != null)
             {
@@ -94,13 +95,13 @@ namespace PaulSpotifyApp.Views
                 if (isPlaying)
                 {
                     _audioPlayer.Pause();
-                    this.PlayPause.Text = "Écouter";
+                    this.PlayPause.Text = "▶";
                     isPlaying = false;
                 }
                 else
                 {
                     _audioPlayer.Play(url);
-                    this.PlayPause.Text = "Arrêter";
+                    this.PlayPause.Text = "■";
                     isPlaying = true;
                 }
             }
