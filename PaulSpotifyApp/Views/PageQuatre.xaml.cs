@@ -22,11 +22,12 @@ namespace PaulSpotifyApp.Views
         public PageQuatre()
         {
             InitializeComponent();
-            var playlistId = "69d0rVifC3AuhnZOQDMXLC";
+            // Playlist de Ramin Djawadi
+            var playlistId = "37i9dQZF1DZ06evO0HqFDa";
 
             this.NomPlaylist.Text = SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId)
                 .Result.Name;
-            this.Autheur.Text = "par " + SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId)
+            this.Auteur.Text = "par " + SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId)
                 .Result.Owner.DisplayName;
             this.NbreDeTitres.Text = SpotifyService.Instance.GetSpotifyClient().Playlists.Get(playlistId)
                 .Result.Tracks.Total + " titres";

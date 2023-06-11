@@ -18,6 +18,7 @@ namespace PaulSpotifyApp.Views
             InitializeComponent();
             BackgroundColor = Color.FromHex("#181818");
 
+            // Id de l'artiste Woodkid
             var woodkidId = "44TGR1CzjKBxSHsSEy7bi9";
 
             this.NomArtiste.Text = SpotifyService.Instance.GetSpotifyClient().Artists.Get(woodkidId)

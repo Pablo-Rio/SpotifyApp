@@ -26,13 +26,13 @@ namespace PaulSpotifyApp.Views
 
         private void OnImageTapped(object sender, EventArgs e)
         {
-            Image fermee = this.FindByName<Image>("enveloppeF");
+            Image fermee = this.FindByName<Image>("EnveloppeF");
             fermee.IsVisible = false;
-            Image ouverte = this.FindByName<Image>("enveloppeO");
+            Image ouverte = this.FindByName<Image>("EnveloppeO");
             ouverte.IsVisible = true;
-            Image lettre = this.FindByName<Image>("lettre");
+            Image lettre = this.FindByName<Image>("Lettre");
             lettre.IsVisible = true;
-            StackLayout tableau = this.FindByName<StackLayout>("tableau");
+            StackLayout tableau = this.FindByName<StackLayout>("Tableau");
             tableau.IsVisible = true;
         }
     }

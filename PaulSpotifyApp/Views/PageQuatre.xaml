@@ -1,37 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PaulSpotifyApp.Views.PageQuatre">
+<ContentPage
+    x:Class="PaulSpotifyApp.Views.PageQuatre"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <StackLayout>
-            <FlexLayout Direction="Column" AlignItems="Start" Padding="30, 10, 30, 0">
-                <Label x:Name="NomPlaylist"
-                       TextColor="Black"
-                       FontSize="35"
-                       HorizontalTextAlignment="Center"
-                       FontAttributes="Bold" />
-                <Label x:Name="Autheur"
-                       TextColor="Black"
-                       FontSize="20"
-                       HorizontalTextAlignment="Center" />
-                <Label x:Name="NbreDeTitres"
-                       TextColor="Black"
-                       HorizontalTextAlignment="Center" />
-                <Label x:Name="DureeTotale"
-                       TextColor="Black"
-                       HorizontalTextAlignment="Center" />
-                <Label x:Name="Test"
-                       TextColor="Black"
-                       HorizontalTextAlignment="Center" />
-                <Label Text="Titres"
-                       TextColor="Black"
-                       FontSize="25"
-                       HorizontalTextAlignment="Center"
-                       FontAttributes="Bold" />
+            <FlexLayout
+                AlignItems="Start"
+                Direction="Column"
+                Padding="30,10,30,0">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="35"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black"
+                    x:Name="NomPlaylist" />
+                <Label
+                    FontSize="20"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black"
+                    x:Name="Auteur" />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black"
+                    x:Name="NbreDeTitres" />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black"
+                    x:Name="DureeTotale" />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black"
+                    x:Name="Test" />
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="25"
+                    HorizontalTextAlignment="Center"
+                    Text="Titres"
+                    TextColor="Black" />
             </FlexLayout>
-            <ListView x:Name="ListeDesTitres" SeparatorColor="Black" RowHeight="30" HeightRequest="200"
-                      Margin="30,5,30,10">
+            <ListView
+                HeightRequest="200"
+                Margin="30,5,30,10"
+                RowHeight="30"
+                SeparatorColor="Black"
+                x:Name="ListeDesTitres">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Tapped="Cell_OnTapped">
@@ -45,46 +59,64 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Frame Padding="0" CornerRadius="10" HasShadow="False" Margin="0,-10,0,0" VerticalOptions="Start">
-                <Image x:Name="ImageDeLAlbum"
-                       Aspect="AspectFill"
-                       VerticalOptions="Start"
-                       HeightRequest="250"
-                       WidthRequest="200"
-                       HorizontalOptions="FillAndExpand" />
+            <Frame
+                CornerRadius="10"
+                HasShadow="False"
+                Margin="0,-10,0,0"
+                Padding="0"
+                VerticalOptions="Start">
+                <Image
+                    Aspect="AspectFill"
+                    HeightRequest="250"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start"
+                    WidthRequest="200"
+                    x:Name="ImageDeLAlbum" />
             </Frame>
-            <AbsoluteLayout WidthRequest="60" HeightRequest="75" Margin="10,-40,0,0">
-                <Button x:Name="PlayPause" Text="▶"
-                        IsVisible="False" Clicked="OnPlayPauseClicked"
-                        WidthRequest="60" HeightRequest="57"
-                        CornerRadius="50"
-                        FontSize="20"
-                        BackgroundColor="#00cd52"/>
+            <AbsoluteLayout
+                HeightRequest="75"
+                Margin="10,-40,0,0"
+                WidthRequest="60">
+                <Button
+                    BackgroundColor="#00cd52"
+                    Clicked="OnPlayPauseClicked"
+                    CornerRadius="50"
+                    FontSize="20"
+                    HeightRequest="57"
+                    IsVisible="False"
+                    Text="▶"
+                    WidthRequest="60"
+                    x:Name="PlayPause" />
             </AbsoluteLayout>
-            <Label x:Name="NomTitre"
-                   Margin="0,-40,0,0"
-                   TextColor="Black"
-                   FontSize="35"
-                   FontAttributes="Bold"
-                   LineHeight="0.9"
-                   HorizontalTextAlignment="Center" />
-            <Label x:Name="NomArtiste"
-                   TextColor="Black"
-                   FontSize="20"
-                   FontAttributes="Bold"
-                   Margin="0,-10,0,0"
-                   HorizontalTextAlignment="Center" />
-            <Label x:Name="NomAlbum"
-                   Padding="30, 00, 30, 0"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center" />
-            <Label x:Name="NumeroDeLaPiste"
-                   IsVisible="False"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center" />
-            <Label x:Name="Duree"
-                   TextColor="Black"
-                   HorizontalTextAlignment="Center" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="35"
+                HorizontalTextAlignment="Center"
+                LineHeight="0.9"
+                Margin="0,-40,0,0"
+                TextColor="Black"
+                x:Name="NomTitre" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Margin="0,-10,0,0"
+                TextColor="Black"
+                x:Name="NomArtiste" />
+            <Label
+                HorizontalTextAlignment="Center"
+                Padding="30,00,30,0"
+                TextColor="Black"
+                x:Name="NomAlbum" />
+            <Label
+                HorizontalTextAlignment="Center"
+                IsVisible="False"
+                TextColor="Black"
+                x:Name="NumeroDeLaPiste" />
+            <Label
+                HorizontalTextAlignment="Center"
+                TextColor="Black"
+                x:Name="Duree" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
